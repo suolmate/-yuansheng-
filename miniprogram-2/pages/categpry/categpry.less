@@ -1,0 +1,61 @@
+/* pages/categpry/categpry.wxss */
+page{
+    height: 100%;
+}
+.cates{
+    .cates_container{
+        height: ~'calc(100vh-90rpx)';
+        display: flex;
+        .left_menu{
+            height: ~'calc(100vh-90rpx)';
+        // 子项 高度 100% flex
+            flex: 2;
+           
+            .menu_item{
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30rpx;
+            }
+            .active{
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+            }
+        }
+        .right_content{
+         // 子项 高度 100% flex 
+         height: ~'calc(100vh-90rpx)';   
+            flex: 5;
+            .goods_group{
+                .goods_title{
+                    height: 80rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .delimiter{
+                        color: #ccc;
+                        padding: 0 10rpx;
+                    }
+                   
+                }
+                .goods_list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    navigator{
+                        view{
+                         width: 100%;   
+                        }
+                        width: 33.33%;
+                        text-align: center;
+                        image{
+                         width: 50%;   
+                        }
+                       
+                        
+                    }
+                }
+            }
+        }
+    }
+}
